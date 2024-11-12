@@ -179,7 +179,7 @@ proc runSimulation() {
     // Set up the excitatory synapses
     
     oRndExc = new Random()
-    oRndExc.ACG(randomiserSeed)
+    oRndExc.Random123(randomiserSeed)
     spiketimes=new Vector()
     Vol=new Vector()
 
@@ -245,7 +245,7 @@ proc runSimulation() {
     }
     
     oRndInh = new Random()
-    oRndInh.ACG(randomiserSeed)
+    oRndInh.Random123(randomiserSeed)
     for (c=0; c<INHTOTALSYNAPSES; c+=1) {
          //gammaStimPC[c] = new NetStim(0.5)
          //gammaStimPC[c].number = 0//1e9
