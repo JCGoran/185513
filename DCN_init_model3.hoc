@@ -208,6 +208,7 @@ proc runSimulation() {
     
 
        ra=new Random()
+       ra.Random123(randomiserSeed)
 
     for (c=0; c < EXCTOTALSYNAPSES; c+=1) {
 //        gammaStimExc[c] = new NetStim()
